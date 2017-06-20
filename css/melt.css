@@ -1,4 +1,4 @@
-/* Melt Sunglasses 6/6/2017 Version 1 */
+/* Melt Sunglasses 6/20/2017 Version 1 */
 
 @font-face{
     font-family:"Gill Sans WGL W05 Light";
@@ -1141,6 +1141,40 @@ div[id^="slider"] {
 }
 
 /* ============================== */
+/* Swiper Code                    */
+/*================================*/
+.swiper-slide .title {
+  font-style: italic;
+  font-size: 42px;
+  margin-top: 80px;
+  margin-bottom: 0;
+  line-height: 45px;
+}
+.pagination {
+  position: absolute;
+  z-index: 20;
+  left: 10px;
+  bottom: 50%;
+}
+.swiper-pagination-switch {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 8px;
+  background: #222;
+  margin-bottom: 15px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.swiper-visible-switch {
+  background: #aaa;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+
+/* ============================== */
 /* Owl Carousel Code              */
 /*================================*/
 .owl-carousel .owl-wrapper:after {
@@ -1335,6 +1369,11 @@ div[id^="slider"] {
   cursor: pointer;
 }
 
+@media (min-width:1024px) {
+  .swiper-slide:nth-child(2) .hp_title {
+    bottom: 43%;
+  }
+}
 
 /* ============================== */
 /* Big Size Desktop Code          */
@@ -1698,7 +1737,6 @@ div[id^="slider"] {
   }
   .item_slider.hp_title {
     bottom: 15%;
-    left: 6%;
   }
   .lb_details li {
     display: none;
